@@ -1,0 +1,116 @@
+.navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%);
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+}
+
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+.text-small {
+    font-size: 0.9rem !important;
+}
+
+
+body {
+    min-height: 110vh;
+    background-color:white;
+    
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.footer {
+    background: #152f4f;
+    color: white;
+  
+    .links {
+      ul {
+        list-style-type: none;
+      }
+      li a {
+        color: white;
+        transition: color 0.2s;
+        &:hover {
+          text-decoration: none;
+          color: #4180cb;
+        }
+      }
+    }
+    .about-company {
+      i {
+        font-size: 25px;
+      }
+      a {
+        color: white;
+        transition: color 0.2s;
+        &:hover {
+          color: #4180cb;
+        }
+      }
+    }
+    .location {
+      i {
+        font-size: 18px;
+      }
+    }
+    .copyright p {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+  .ofc:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
